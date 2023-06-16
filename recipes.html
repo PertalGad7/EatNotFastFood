@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Сайт з рецептами</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>EatNotFastFood</h1>
+	</header>
+<main>
+	<div id="recipes"></div>
+	<div id="recipe-details"></div>
+	<h2>Додати рецепт</h2>
+	<form id="recipe-form">
+		<label for="recipe-title">Назва:</label>
+		<input type="text" id="recipe-title" required><br><br>
+		<label for="recipe-ingredients">Інгредієнти (кожен на новому рядку):</label>
+		<textarea id="recipe-ingredients" required></textarea><br><br>
+		<label for="recipe-instructions">Інструкції:</label>
+		<textarea id="recipe-instructions" required></textarea><br><br>
+		<button type="submit">Додати</button>
+	</form>
+</main>
+<script src="recipes.js"></script>
+</body>
+</html>
